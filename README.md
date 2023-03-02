@@ -91,11 +91,11 @@ After the baseline prediction was created, The Analyst progressed with multiple 
 ## Summary
 None of The Analyst's attempts at optimizing the neural network model were successful as all of the results from the 5 iterations below 75% accuracy.  To try to determine an optimal set up for the neural network model, The Analyst ran a kerastuner function to find the best set up parameters for the predictive model and provide the highest resulting accuracy from those parameters.  The code to set up the kerastuner function is below:
 
-    ![kerastuner.png](https://github.com/hillmanj1995/Alphabet-Soup---Neural-Network-Analysis/blob/main/Resources/kerastuner.png)
+![kerastuner.png](https://github.com/hillmanj1995/Alphabet-Soup---Neural-Network-Analysis/blob/main/Resources/kerastuner.png)
 
 The function provided an output showing the ideal setup parameters and highest accuracy that can be achieved from the current dataset.
 
-    ![kerastuner_results.png](https://github.com/hillmanj1995/Alphabet-Soup---Neural-Network-Analysis/blob/main/Resources/kerastuner_results.png)
+![kerastuner_results.png](https://github.com/hillmanj1995/Alphabet-Soup---Neural-Network-Analysis/blob/main/Resources/kerastuner_results.png)
 
 The kerastuner functions shows that after 500 trails, the highest accuracy that could be achieved from the current dataset was only 72.52%.  As this is lower than the target accuracy of 75%, The Analyst should go back to the original dataset and reassess which columns benefit the model's prediction performance.  Those columns should be dropped/added and the prediction attempts should be performed again.
 
